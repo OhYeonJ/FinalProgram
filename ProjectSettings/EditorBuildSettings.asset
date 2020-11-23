@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scene/TitleMenu.unity
+    guid: 6ef644ab8d4aed14e923f3ee6f065237
+  - enabled: 1
+    path: Assets/Scene/LoadScene.unity
+    guid: 2974113c31a33e04bbf766d306d5bfaa
+  - enabled: 1
+    path: Assets/Scene/CutScene.unity
+    guid: 08b340361e074c647bb2a04205a72061
+  - enabled: 1
+    path: Assets/Scene/Tutorial_1.unity
+    guid: 6b2c366d9bfab794fa61a0c69c7556b9
+  - enabled: 1
+    path: Assets/Scene/Tutorial_2.unity
+    guid: b4cd5e0c1dc506345b0bf647416d5c60
+  - enabled: 1
+    path: Assets/Scene/Tutorial_3.unity
+    guid: 7c0306ec03f0bfb4eba59d90ce31d3a1
+  - enabled: 1
+    path: Assets/Scene/stage1.Livingroom.unity
+    guid: 055f6b8edb5e7814694fbc85c1559901
+  - enabled: 1
+    path: Assets/Scene/stage1.Kitchen.unity
+    guid: 037979e6410e7d04f994f55d3f0a0e67
+  - enabled: 1
+    path: Assets/Scene/stage1.Dressedroom.unity
+    guid: 9fb1203c7d165b04ea8ac6c9298ae42e
+  - enabled: 1
+    path: Assets/Scene/stage1.Bedroom.unity
+    guid: ea1188165836fbe47b58eb24f19d89a7
+  - enabled: 1
+    path: Assets/Scene/stage2.Livingroom.unity
+    guid: b0a5ad4df2a9737429fe6fe3cbb8caa0
+  - enabled: 1
+    path: Assets/Scene/stage2.Library.unity
+    guid: 42395e7861aa53649ad83d7cd0a65e74
+  - enabled: 1
+    path: Assets/Scene/stage2.Longhall.unity
+    guid: 638046af5e9bcfe4abb817c15f4720c5
+  - enabled: 1
+    path: Assets/Scene/GameOver.unity
+    guid: 7183716df7a3b6e428528923c015e36d
+  - enabled: 1
+    path: Assets/Scene/Ending.unity
+    guid: cf272a81e6432484a88bb31e3fb479a6
+  m_configObjects: {}
