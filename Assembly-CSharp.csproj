@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{39F5C9F1-2035-5372-A260-5AACAED934C6}</ProjectGuid>
+    <ProjectGuid>{BE8D2AAF-1E71-3C60-9E25-C0BBB459B575}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -98,8 +98,10 @@
      <Compile Include="Assets\Scripts\Sound\PlayBgm.cs" />
      <Compile Include="Assets\Scripts\Sound\PlaySound.cs" />
      <Compile Include="Assets\Scripts\Sound\SoundManager.cs" />
+     <Compile Include="Assets\Scripts\Sound\Sounds.cs" />
      <Compile Include="Assets\Scripts\Sound\TriggerSound.cs" />
      <Compile Include="Assets\Scripts\TitleMenu\ExitGame.cs" />
+     <Compile Include="Assets\Scripts\TitleMenu\SoundOption.cs" />
      <Compile Include="Assets\Scripts\TitleMenu\StartManager.cs" />
      <Compile Include="Assets\Scripts\TitleMenu\Title.cs" />
      <Compile Include="Assets\Scripts\UI\ButtonGuideScript.cs" />
@@ -108,10 +110,10 @@
      <Compile Include="Assets\Scripts\UI\Pause.cs" />
      <Compile Include="Assets\Scripts\UI\PauseUIManager.cs" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>D:/2학기 졸업작품/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/ASUS/Documents/GitHub/FinalProgram/B677017 오연주 졸업작품/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>D:/2학기 졸업작품/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/ASUS/Documents/GitHub/FinalProgram/B677017 오연주 졸업작품/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
