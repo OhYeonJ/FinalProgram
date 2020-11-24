@@ -115,16 +115,17 @@ public class Inventory2 : MonoBehaviour {
    
     */
 
-    public void RemoveItem(Item2 _item) //아이템 삭제 메서드
+    public void RemoveItem(Item2 _item , int _index) //아이템 삭제 메서드
     {
         items.Remove(_item);
-        //items.RemoveAt(_index); //아이템 정보 삭제
+        items.RemoveAt(_index); //아이템 정보 삭제
         onChangeItem.Invoke(); //onChangeItme 호출
     }
 
-    public void RemoveItemType(ItemType2 _itemType2)
+    public void RemoveItemType(ItemType2 _itemType2, int _index)
     {
         itemTypeList.Remove(_itemType2);
+        itemTypeList.RemoveAt(_index);
         onChangeItem.Invoke(); //onChangeItme 호출
     }
 
@@ -157,8 +158,8 @@ public class Inventory2 : MonoBehaviour {
                         doorInteract.itemActived();
 
                         slot.ItemUse();
-                        RemoveItemType(doorInteract.GetItemType());
-                        RemoveItem(doorInteract.GetItemInfo());
+                        //RemoveItemType(doorInteract.GetItemType(),);
+                        //RemoveItem(doorInteract.GetItemInfo(),);
                         //Invoke("RemoveItemType(doorInteract.GetItemType())", 1f);
                         //Invoke("RemoveItem(doorInteract.GetItemInfo())", 1f);
                     }
@@ -186,12 +187,12 @@ public class Inventory2 : MonoBehaviour {
                         //StartCoroutine(InteractionActived());
                         enemyInteract.monsterItemActived();
 
-                        RemoveItemType(enemyInteract.GetItemType());
-                        RemoveItem(enemyInteract.GetItemInfo());
-
                         StartCoroutine(InteractionActived());
+                        //RemoveItemType(enemyInteract.GetItemType(), slotnum);
+                        //RemoveItem(enemyInteract.GetItemInfo());
 
-                        
+                        slot.ItemUse();
+
                         //Invoke("enemyInteract.monsterItemActived()",1f); //4초 뒤에 몬스터 오브젝트 삭제
                     }
 
@@ -204,27 +205,6 @@ public class Inventory2 : MonoBehaviour {
 
             }
             
-        }
-
-        if (collision.tag == "BlockedItem") //지나갈 수 없는 콜라이더와 충돌했으면
-        {
-            if (Input.GetKeyDown(KeyCode.Z)) //z키로 조사하고 상호작용
-            {
-                TutorialInteract tutorialInteract = collision.GetComponent<TutorialInteract>();
-                if (tutorialInteract != null)
-                {
-                    if (ContainItem(tutorialInteract.GetItemType()) == true)
-                    {
-                        theDm.ShowDialogue(dialogueOK); //아이템 사용 확인 알림
-                        RemoveItemType(tutorialInteract.GetItemType());
-                        RemoveItem(tutorialInteract.GetItemInfo());
-                    }
-
-                    else if (ContainItem(tutorialInteract.GetItemType()) == false) //false 경우는 문제가 없음
-                        theDm.ShowDialogue(dialogueFail); //아이템 없음을 알림.
-                }
-            }
-               
         }
     }
 

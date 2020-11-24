@@ -51,8 +51,12 @@ public class Slot : MonoBehaviour,IPointerEnterHandler, IPointerExitHandler
     public void ItemUse() //아이템 사용 메서드
     {      
         bool isUse = Item2.Use();
-        Inventory2.instance.RemoveItem(item);
-        Inventory2.instance.RemoveItemType(itemType);
+        if(isUse)
+        {
+            Inventory2.instance.RemoveItem(item,slotnum);
+            Inventory2.instance.RemoveItemType(itemType,slotnum);
+        }
+       
     }       
 
 }
